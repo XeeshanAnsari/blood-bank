@@ -25,7 +25,7 @@ class SignUp extends React.Component{
              email: this.state.email,
              pass: this.state.pass, 
         }
-        // this.props.onAddNewUser(userInfo)
+         this.props.onAddNewUser(userInfo)
         this.setState({
              fName: '',
              lName: '',
