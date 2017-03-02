@@ -3,7 +3,7 @@ import React from 'react';
 
 
 
-class SignIn extends React.Component{
+class SignInForm extends React.Component{
     constructor(){
         super()
     }
@@ -21,4 +21,4 @@ class SignIn extends React.Component{
     }
 }
 
-export default SignIn
+export default SignInForm;
