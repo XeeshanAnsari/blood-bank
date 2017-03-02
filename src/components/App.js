@@ -1,7 +1,8 @@
 import React from 'react';
 
 import Header from './pages/Header';
-import { hashHistory,
+import SignIn from './pages/SignIn';
+import { browserHistory,
     Router,
     Route,
     IndexRoute, 
@@ -12,11 +13,13 @@ import { hashHistory,
 class App extends React.Component{
     render(){
        return (
-          <Router history={hashHistory}>
+          <Router history={browserHistory}>
             <Route path="/" component={Header}>
-            <IndexRoute />
+            <IndexRoute  component={Header}/>
+             
             
             </Route>
+            <Route path="/s" component={SignIn} />
         </Router>  
        )   
     }
