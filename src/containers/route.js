@@ -1,15 +1,13 @@
 import React from 'react';
 
-import Header from './pages/Header';
-import SignInForm from './pages/SignInForm';
-import signUp from '../containers/signUp';
-import registrationUsers from '../containers/registrationUsers'
+import Header from '../components/pages/Header';
+import SignInForm from '../components/pages/SignInForm';
+import signUp from './signUp';
+import registrationUsers from './registrationUsers'
 import { browserHistory,
     Router,
     Route,
-    
-    
-    
+     
 } from 'react-router';
 
 class App extends React.Component{
