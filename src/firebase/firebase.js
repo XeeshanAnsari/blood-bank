@@ -1,3 +1,4 @@
+import firebase from 'firebase'
 // Initialize Firebase
   var config = {
     apiKey: "AIzaSyBvFsLFrDIzQiC3Fkd8u-VyIHB-5TkJRBE",
@@ -6,5 +7,7 @@
     storageBucket: "blood-bank-1c490.appspot.com",
     messagingSenderId: "863780767346"
   };
-export const firebase =  firebase.initializeApp(config);
-export const firebaseDb = firebase.database();
+
+      firebase.initializeApp(config);
+const firebaseDb = firebase.database();
+export default firebaseDb;

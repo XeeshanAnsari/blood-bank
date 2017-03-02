@@ -1,14 +1,25 @@
 import ActionTypes from '../constants/action_types';
-import fireaseDb from '../firebase/firebase';
+import firebaseDb from '../firebase/firebase';
 
 export function addNewUser(userInfo) {
     return dispatch => {
         
-     const usersRef = fireaseDb.ref('/newUsers');
+     const usersRef = firebaseDb.ref('/Users');
         usersRef.push ({
             userInfo
         })
-                
-        
+        .then(() => {
+            dispatch(addNewUserFulfilledAction({ userInfo }));
+        })
+                      
     }
+}
+
+export function addNewUserFulfilledAction(userInfo){
+    
+    return{
+           type: ActionTypes.newUserFulfilled,
+           payload:userInfo
+    }
+
 }

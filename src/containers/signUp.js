@@ -6,7 +6,7 @@ import SignUpForm from '../components/pages/SignUpForm';
 
 function mapStateToProps(state){
     return {
-      
+      users: state.userInfo
     };
 
 }
@@ -19,7 +19,7 @@ function mapDispatchToProps(dispatch){
     };
 }
 
-const newUserAdd = connect(mapStateToProps, mapDispatchToProps)(SignUpForm);
+const signUp = connect(mapStateToProps, mapDispatchToProps)(SignUpForm);
 
 
-export default newUserAdd;
+export default signUp;

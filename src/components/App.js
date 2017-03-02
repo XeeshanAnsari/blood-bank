@@ -2,7 +2,7 @@ import React from 'react';
 
 import Header from './pages/Header';
 import SignInForm from './pages/SignInForm';
-import SignUpForm from './pages/SignUpForm';
+import signUp from '../containers/signUp';
 import donerForm from './pages/donerForm'
 import { browserHistory,
     Router,
@@ -17,7 +17,7 @@ class App extends React.Component{
        return (
           <Router history={browserHistory}>
             <Route path="/" component={Header} />
-             <Route path="/signup" component={SignUpForm} />
+             <Route path="/signup" component={signUp} />
             <Route path="/signin" component={SignInForm} />
             <Route path="/donerForm" component={donerForm} />
         </Router>  
