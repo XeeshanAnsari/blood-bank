@@ -13,7 +13,7 @@ class SignUp extends React.Component{
              email: '',
              pass: '', 
         }
-        this.thihandleSubmit = this.handleSubmit.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
         
     }
     
