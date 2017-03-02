@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'redux'
 import './index.css';
 
 ReactDOM.render(
-  <Provider>
-     <App />
-  </Provider>   ,
+  
+  <h2>Hello wolrd</h2>   ,
   document.getElementById('root')
 );
