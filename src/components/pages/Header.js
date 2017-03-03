@@ -13,7 +13,7 @@ class Header extends React.Component{
                    </span>
                    
                    <ul className=" nav navbar-nav navbar-right ">
-                        <Link className="navbar-btn btn btn-primary " to="/signin" ><li>Sign In</li></Link>
+                        <Link className="navbar-btn btn btn-primary " to="/login" ><li>Sign In</li></Link>
                         <Link className="navbar-btn btn btn-primary" to="/signup" ><li>Sign Up</li></Link>
                     </ul>
                </nav>

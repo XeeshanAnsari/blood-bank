@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 
 import Header from '../components/pages/Header';
 import SignInForm from '../components/pages/SignInForm';
@@ -24,4 +24,4 @@ class App extends React.Component{
 }
 
 
-export default App;
+export default App;*/

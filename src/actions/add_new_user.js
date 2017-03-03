@@ -27,7 +27,7 @@ export function addNewUserFulfilledAction(userInfo){
     return{
         
            type: ActionTypes.newUserFulfilled,
-           payload:userInfo
+           value:userInfo
     }
 
 }
