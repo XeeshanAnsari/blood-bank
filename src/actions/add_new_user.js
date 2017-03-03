@@ -1,5 +1,11 @@
 import ActionTypes from '../constants/action_types';
-import firebaseDb from '../firebase/firebase';
+ import { firebaseDb , firebaseAuth} from '../firebase/firebase';
+
+
+
+function  addNewUserToAuth(email , pass){
+    return firebaseAuth.createUserWithEmailAndPassword(email,pass);
+}
 
 export function addNewUser(userInfo) {
     return dispatch => {
@@ -9,6 +15,7 @@ export function addNewUser(userInfo) {
             userInfo
         })
         .then(() => {
+            dispatch(addNewUserToAuth(userInfo.email, userInfo.pass));
             dispatch(addNewUserFulfilledAction({ userInfo }));
         })
                       
@@ -18,6 +25,7 @@ export function addNewUser(userInfo) {
 export function addNewUserFulfilledAction(userInfo){
     
     return{
+        
            type: ActionTypes.newUserFulfilled,
            payload:userInfo
     }

@@ -9,5 +9,5 @@ import firebase from 'firebase'
   };
 
       firebase.initializeApp(config);
-const firebaseDb = firebase.database();
-export default firebaseDb;
+export const firebaseDb = firebase.database();
+export const firebaseAuth = firebase.auth();
